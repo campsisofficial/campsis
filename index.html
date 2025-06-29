@@ -1,20 +1,78 @@
 <!DOCTYPE html>
 <html lang="id">
-<head>…</head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Campsis | Kopi & Minuman Kekinian</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Poppins', sans-serif; line-height: 1.6; background: #fff; color: #333; }
+    header { background: #5C4033; color: #fff; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; }
+    header h1 { font-size: 1.5rem; }
+    nav a { color: #fff; margin-left: 1rem; text-decoration: none; }
+    .hero { background: url('https://source.unsplash.com/1600x600/?coffee-shop') center/cover no-repeat; padding: 4rem 2rem; text-align: center; color: white; }
+    .hero h2 { font-size: 2.5rem; margin-bottom: 1rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
+    .hero button { background: #FF7F50; border: none; padding: 1rem 2rem; color: #fff; border-radius: 8px; font-size: 1rem; cursor: pointer; }
+
+    .products { padding: 3rem 2rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; }
+    .card { background: #fff; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); overflow: hidden; }
+    .card img { width: 100%; height: 200px; object-fit: cover; }
+    .card h3 { font-size: 1.2rem; margin: 1rem; }
+    .card p { margin: 0 1rem 1rem; color: #FF7F50; font-weight: bold; }
+    .card a { display: block; margin: 0 1rem 1rem; background: #FF7F50; color: #fff; text-align: center; padding: 0.5rem; border-radius: 6px; text-decoration: none; }
+
+    .about { padding: 3rem 2rem; background: #f4f4f4; text-align: center; }
+    .about h2 { margin-bottom: 1rem; color: #5C4033; }
+    .about p { max-width: 600px; margin: auto; }
+
+    footer { background: #5C4033; color: #fff; text-align: center; padding: 1rem; font-size: 0.9rem; }
+  </style>
+</head>
 <body>
-  <header>…</header>
-  <section class="produk">
-    <!-- Kopi Gula Aren -->
-    <div class="item">
-      <img src="…" alt="Kopi Gula Aren"/>
-      <h3>Kopi Gula Aren</h3>
-      <p>Rp15.000</p>
-     <button onclick="window.location.href='https://wa.me/6285718848465?text=Saya%20ingin%20pesan%20Kopi%20Gula%20Aren'">
-  Pesan Sekarang
-</button>
-    </div>
-    <!-- Tambahkan produk lainnya... -->
-  </section>
-  <footer>…</footer>
+
+<header>
+  <h1>Campsis</h1>
+  <nav>
+    <a href="#menu">Menu</a>
+    <a href="#about">Tentang</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Kopi Kekinian, Rasa Asli</h2>
+  <button onclick="window.location.href='https://wa.me/6281234567890'">Pesan Sekarang via WhatsApp</button>
+</section>
+
+<section id="menu" class="products">
+  <div class="card">
+    <img src="https://source.unsplash.com/400x300/?coffee" alt="Kopi Gula Aren">
+    <h3>Kopi Gula Aren</h3>
+    <p>Rp15.000</p>
+    <a href="https://wa.me/6281234567890?text=Halo%20saya%20mau%20pesan%20Kopi%20Gula%20Aren">Pesan</a>
+  </div>
+  <div class="card">
+    <img src="https://source.unsplash.com/400x300/?latte" alt="Kopi Butterscotch">
+    <h3>Kopi Butterscotch</h3>
+    <p>Rp18.000</p>
+    <a href="https://wa.me/6281234567890?text=Halo%20saya%20mau%20pesan%20Kopi%20Butterscotch">Pesan</a>
+  </div>
+  <div class="card">
+    <img src="https://source.unsplash.com/400x300/?tea" alt="Thai Tea">
+    <h3>Thai Tea</h3>
+    <p>Rp13.000</p>
+    <a href="https://wa.me/6285718848465?text=Halo%20saya%20mau%20pesan%20Thai%20Tea">Pesan</a>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <h2>Tentang Campsis</h2>
+  <p>Campsis adalah kedai kopi lokal yang menyajikan minuman kekinian dengan rasa khas Nusantara. Setiap cangkir kami racik dengan cinta dan bahan berkualitas.</p>
+</section>
+
+<footer>
+  &copy; 2025 Campsis. Kopi & Minuman Kekinian. WA: 0812-3456-7890
+</footer>
+
 </body>
 </html>
